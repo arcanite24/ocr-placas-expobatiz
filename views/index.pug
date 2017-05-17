@@ -14,13 +14,24 @@ block content
         .panel-heading Controles
         .panel-body
           .row
-            .col-md-12 Hola
+            .col-md-12
+              button.btn.btn-primary.btn-block#button-ss Leer Placa desde la cámara
+            .col-md-12
+              form(action="/leer", method="post", enctype="multipart/form-data")#form-upload
+                .row
+                  .col-md-12.form-group
+                    label Subir foto para leer placas
+                    input(type="file", name="foto").form-control#input-file
     .col-md-4
       .panel.panel-primary
         .panel-heading Salida
         .panel-body
           .row
-            .col-md-12 Hola
+            .col-md-12#output-info Carga una imágen o clickea en el botón para leer la placa desde la cámara conectada.
+            .col-md-12#output-after
+              h4
+                strong Placa: 
+                span#output-placa
 
 block scripts
   script(src="js/webcam.js")
