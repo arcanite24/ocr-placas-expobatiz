@@ -1,0 +1,18 @@
+{
+  "name": "ocr-placas-nodejs",
+  "version": "0.0.1",
+  "description": "OCR Placas ExpoBátiz 2017",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "node-openalpr": "^1.1.1",
+    "pug": "^2.0.0-rc.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon G. Neri",
+  "license": "MIT"
+}

@@ -1,0 +1,29 @@
+extends layout.pug
+
+block content
+  .row(style="padding: 0 2rem 0")
+    .col-md-4
+      .panel.panel-primary
+        .panel-heading Cámara Web
+        .panel-body
+          .row
+            .col-md-12 
+              video#webcam(autoplay="true")
+    .col-md-4
+      .panel.panel-primary
+        .panel-heading Controles
+        .panel-body
+          .row
+            .col-md-12 Hola
+    .col-md-4
+      .panel.panel-primary
+        .panel-heading Salida
+        .panel-body
+          .row
+            .col-md-12 Hola
+
+block scripts
+  script(src="js/webcam.js")
+  
+block styles
+  link(rel="stylesheet", href="css/webcam.css")
